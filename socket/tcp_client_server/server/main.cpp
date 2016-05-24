@@ -221,3 +221,32 @@ int main(int argc, char* argv[])
     WSACleanup();
     return 0;
 }
+
+#if 0
+input socket:1924, addrclt:192.168.0.105[6900a8c0]@10987, len:16
+client-socketfd:1924 do-recv-bef
+accept client: 1924, buffer length:37472, index:    0
+accept client: 1924, buffer length:    6, index:    1
+accept client: 1924, receive end tag
+client-socketfd:1924 do-recv-end, rcvdat-size:37472
+client-socketfd:1924 do-process-bef
+client-socketfd:1924 do-process-end
+client-socketfd:1924 do-send-bef
+client-socketfd:1924 do-send-size:37472
+client-socketfd:1924 do-send-current-snd:37472
+client-socketfd:1924 do-send-end
+---------------------
+input socket:1924, addrclt:192.168.0.105[6900a8c0]@24296, len:16
+client-socketfd:1924 do-recv-bef
+accept client: 1924, buffer length:37472, index:    0
+accept client: 1924, buffer length:    6, index:    1
+accept client: 1924, receive end tag
+client-socketfd:1924 do-recv-end, rcvdat-size:37472
+client-socketfd:1924 do-process-bef
+client-socketfd:1924 do-process-end
+client-socketfd:1924 do-send-bef
+client-socketfd:1924 do-send-size:37472
+client-socketfd:1924 do-send-current-snd:37472
+client-socketfd:1924 do-send-end
+
+#endif
